@@ -1,0 +1,467 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    /* background: linear-gradient(90deg, rgba(200, 199, 219, 0.6531862745098039) 0%, rgba(103, 209, 231, 1) 39%, rgba(161, 161, 214, 1) 74%); */
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+
+header {
+    background-image: url(img/cw42_mainbanner_apple_iphone12-eu.jpg);
+    height: 300px;
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.task-bar {
+    background-color: rgba(54, 59, 63, 0.696);
+    color: white;
+    /* border: 0px solid rgb(152, 149, 149); */
+    width: 370px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.task-bar>ul>li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.task-bar>ul>li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.824);
+    padding: 15px 32px 15px 2px;
+    text-decoration: none;
+}
+
+.task-bar>ul>li a:hover{
+    box-shadow: 0 3px 0 white;
+    background-color: rgba(21, 21, 21, 0.881);
+    border-radius: 20px;
+}
+
+nav {
+    background-color: rgba(54, 59, 63, 0.696);
+    margin-bottom: 10px;
+    border-radius: 0 0 15px 15px;
+}
+
+
+.kmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px 0px 20px;
+}
+
+nav>.menu>ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+nav>.menu>ul>li:hover {
+    background: linear-gradient(0.45turn, #64c8e6, #75757d86);
+    border-radius: 10px 20px;
+}
+
+nav>.menu>ul>li a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+    color: rgba(255, 255, 255, 0.824);
+    padding: 15px 35px;
+}
+
+.menu .kmenu>li:hover>.vmenu {
+    display: block;
+}
+
+.label>.hmenu>a:focus iframe{
+    display: block;
+}
+
+.label>.hmenu>a>iframe{
+    display: none;
+}
+.label>.hmenu>a>iframe:hover{
+    display:block;
+}
+
+
+.vmenu {
+    background-color: rgb(170, 168, 168);
+    margin: 0px;
+    padding: 0px;
+    border-radius: 15px;
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 150px;
+}
+
+
+.vmenu li a {
+    display: block;
+    line-height: 30px;
+    color: orangered;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(54, 59, 63, 0.696);
+}
+
+.vmenu li i {
+    margin-right: 5px;
+}
+
+.vmenu>li>a:hover {
+    border-radius: 15px;
+    background-color: rgba(54, 59, 63, 0.696);
+    box-shadow: 0 3px 0 white;
+    font-weight: bolder;
+    color: white;
+}
+
+.menu input {
+    background-color: rgb(0, 0, 0);
+    float: right;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 0px;
+    padding: 15px 40px 10px 15px;
+    font-size: 15px;
+    border: none;
+    color: white;
+}
+
+.menu input:hover {
+    box-shadow: 0 0 2px white;
+}
+
+.menu button {
+    position: relative;
+    top: 2px;
+    left: 255px;
+    padding: 6px 10px;
+    margin-right: 16px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+}
+
+aside {
+    float: left;
+    min-height: 350px;
+    width: 20%;
+}
+
+.menu2 {
+    background-color: rgb(33 33 33);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.news {
+    background-color: rgb(33 33 33);
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.label {
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 42px;
+
+}
+
+.hmenu {
+    align-items: center;
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+.hmenu a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 70px;
+    color: white;
+    text-decoration: none;
+}
+
+.label a:hover {
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+.hmenu i {
+    margin-right: 5px;
+}
+
+.label>.icon-right i {
+    width: 0px;
+    height: 10px;
+}
+
+.news h3 {
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.label-2 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 42px;
+}
+
+.label-2 a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+.label-2 i {
+    margin-right: 5px;
+}
+
+.label-2 a:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+video {
+    border-radius: 15px;
+    margin-top: 29px;
+    border: 2px solid rgba(255, 255, 255, 0.824);
+}
+
+article {
+    float: right;
+    text-align: center;
+    width: 79%;
+    margin-bottom: 10px;
+}
+
+.goods {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.product {
+    background-color: #414141;
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 5px white;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product h4 {
+    color: #eae4e4;
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+.product .price {
+    font-size: 20px;
+    color: #f4ff00f5;
+    font-weight: bold;
+}
+
+.price del {
+    font-size: 17px;
+    color: white;
+    font-style: italic;
+}
+
+.product .buy button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 12px;
+    transition: transform 0.9s ease;
+}
+
+.product .buy button:hover {
+    background: linear-gradient(90deg, rgba(200, 199, 219, 0.6531862745098039) 0%, rgba(103, 209, 231, 1) 39%, rgba(161, 161, 214, 1) 74%);
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #eae4e4;
+}
+
+.ads-1>header {
+    background-image: url(img/sale1.jpg);
+    height: 127px;
+    background-size: 100% 100%;
+    line-height: 120px;
+    border-radius: 0;
+    margin: 14px 0;
+}
+
+.ads-2 {
+    background-image: url(img/4133mGSN8aL.jpg);
+    height: 450px;
+    background-size: 100% 100%;
+    margin-top: 15px;
+    border: 1px solid rgb(33 33 33);
+    border-radius: 20px;
+}
+
+
+footer {
+    position: relative;
+    border-radius: 15px;
+    background-color: rgb(33 33 33);
+    padding: 35px 0 0 0;
+    clear: both;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.824);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(195, 184, 184);
+}
+
+/* .footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+} */
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .logo1 a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .logo1 a:hover {
+    color: #24262b;
+    border-radius: 50%;
+    background-color: rgb(70, 62, 62);
+}
+
+.logo1 {
+    list-style: none;
+    display: flex;
+}
+
+
+.info>.row>.footer-col ul {
+    list-style: none;
+}
+
+.fb-comments {
+    /* background-color: rgba(54, 59, 63, 0.696); */
+    margin-top: 45px;
+    border-radius: 0 0 15px 15px;
+}
+
+iframe [name = page]{
+    width: 100%;
+    height: 1300px;
+}
+
+.fb-like {
+    margin-top: 5px;
+}

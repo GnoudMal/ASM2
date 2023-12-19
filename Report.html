@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .form {
+            width: 400px;
+            margin: 0px auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px gray;
+            background-color: rgb(33 33 33);
+        }
+        
+        .form-group {
+            margin: 10px 20px;
+        }
+
+        .form-input {
+            margin: 3px 0px;
+            padding: 5px;
+            border: none;
+            width: 200px;
+            border-radius: 3px;
+            box-shadow: 0 0 3px blue;
+            color: white;
+            font-weight: bold;
+            display: block;
+            outline: none;
+            background-color:rgba(156, 142, 142, 0.861);
+        }
+        
+        .form-select{
+            border-radius: 10px;
+            color:  rgba(255, 255, 255, 0.824);
+            background-color:rgba(156, 142, 142, 0.861);
+        }
+
+        .button{
+            padding: 10px;
+            margin: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(156, 125, 125);
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 3px 0 white;
+            transition: .5s;
+        }
+
+        .button:active{
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+
+        label{
+            color: rgba(255, 255, 255, 0.824);
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form" action="">
+        <div class="form-group">
+            <label for="">UserName:</label>
+            <input type="text" class="form-input">
+        </div>
+
+        <br>
+        <div class="form-group">
+            <label for="">Age:</label>
+            <input type="number" class="form-input">
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            <label for="">Nationality:</label>
+            <select name="" id="" class="form-select">
+                <option value="United State">United State</option>
+                <option value="Japan">Japan</option>
+                <option value="VietNam">VietNam</option>
+                <option value="England">England</option>
+                <option value="France">France</option>
+            </select>
+        </div>
+
+        <br>
+        <div class="form-group">
+            <label for="">Products to report:</label>
+            <select name="" id="" class="form-select">
+                <option value="Iphone">Iphone</option>
+                <option value="SamSung">SamSung</option>
+                <option value="LapTop">LapTop</option>
+                <option value="Watch">Watch</option>
+                <option value="More">More</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            <label for="">Detailed reports:</label>
+        <textarea name="" id="" cols="50" rows="10" class="form-input"></textarea>
+        </div>
+
+        <button class="button">Send</button>
+
+    </form>
+</body>
+
+</html>
